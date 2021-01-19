@@ -3,10 +3,10 @@ pattern_name: axis-pattern
 description: "This defines a line along an axis of a structure."
 
 classes:
-  example: owl:Thing
+  Thing: owl:Thing
 
 relations:
-  part_of: BFO:0000050
+  follows_axis: BSPO:0015002
 
 vars:
   axis: 'Thing'
@@ -18,6 +18,12 @@ name:
    - axis
    - structure
 
+def:
+  text: "A line along the %s of %s"
+  vars:
+    - axis
+    - structure
+    
 equivalentTo:
   text: "%s ('follows axis' some %s"
   vars:
