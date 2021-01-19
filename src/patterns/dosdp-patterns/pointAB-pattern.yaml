@@ -20,7 +20,7 @@ name:
    - pointB
 
 def:
-  text: "A line along an anatomical structure that connects %s to %s"
+  text: "A line along an anatomical structure that connects %s and %s"
   vars:
     - pointA
     - pointB
