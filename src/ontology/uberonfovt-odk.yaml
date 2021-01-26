@@ -4,7 +4,7 @@ repo: uberonfovt
 github_org: futres
 use_dosdps: TRUE
 allow_equivalents: all
-dosdp_tools_options: "--obo-prefixes=true --restrict-axioms-to=logical"
+dosdp_tools_options: "--obo-prefixes=true"
 export_formats:
 - owl
 - obo
