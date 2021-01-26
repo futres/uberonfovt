@@ -1,0 +1,21 @@
+id: uberonfovt
+title: UBERON FOVT module
+repo: uberonfovt
+github_org: futres
+use_dosdps: TRUE
+allow_equivalents: all
+dosdp_tools_options: --obo-prefixes=true
+export_formats:
+- owl
+- obo
+import_group:
+  products:
+  - id: uberon
+  - id: bspo
+  - id: ro
+  - id: pato
+license: https://creativecommons.org/licenses/unspecified
+release_artefacts:
+- full
+- base
+robot_java_args: '-Xmx6G'
