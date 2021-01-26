@@ -10,7 +10,7 @@ relations:
 
 vars:
   axis: 'Thing'
-  structure: 'Thiing'
+  structure: 'Thing'
 
 name:
   text: "Line along %s of %s"
