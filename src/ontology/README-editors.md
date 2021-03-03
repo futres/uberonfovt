@@ -72,6 +72,28 @@ to regenerate imports.
 Note: the uberonfovt_terms.txt file may include 'starter' classes seeded from
 the ontology starter kit. It is safe to remove these.
 
+## Release
+
+1. Run reasoner and save changes to edit.owl in Protégé 
+2. Navigate to src/ontology
+3. On GitHub Desktop, create and switch to a new branch; label it the release version (be sure to bring all changes over to that new branch)
+4. Run `sh run.sh make prepare_release`
+5. Commit and push changes on GitHub Desktop
+6. Create a pull request
+7. On github.com/futres/fovt, switch to master branch and merge pull request
+8. Create a new release with tag labled "vYYYY-MM-DD"
+
+### Error messages
+
+_Error 1_
+* Open Protégé
+* Navigate to Entities, switch to inferred
+* Click on "owl:Thing" to get to "owl:Nothing"
+* On the bar "Description: owl:Nothing" click the "?" square
+* Run and stop after it finds 1 error
+* Look at the disjoint axiom and explanation
+* Save to edit.owl in Protégé
+
 ## Design patterns
 
 You can automate (class) term generation from design patterns by placing DOSDP
