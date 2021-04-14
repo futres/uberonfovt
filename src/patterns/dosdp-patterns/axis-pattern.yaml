@@ -25,7 +25,7 @@ def:
     - structure
     
 equivalentTo:
-  text: "%s ('follows axis' some %s"
+  text: "%s ('follows axis' some %s)"
   vars:
     - axis
     - structure
