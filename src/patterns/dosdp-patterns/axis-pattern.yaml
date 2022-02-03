@@ -1,16 +1,21 @@
+contributors:
+    - https://orcid.org/0000-0003-2699-3066
+
 pattern_name: axis-pattern
 #pattern_iri: http://purl.obolibrary.org/obo/odk/example.yaml
 description: "This defines a line along an axis of a structure."
 
 classes:
-  Thing: owl:Thing
+  anatomical_structure: 'UBERON:0000465'
+  anatomical_axis: 'BSPO:0000010'
 
 relations:
-  follows_axis: BSPO:0015002
+  follows_axis: 'BSPO:0015002'
 
 vars:
-  axis: 'Thing'
-  structure: 'Thing'
+  structure: anatomical_structure
+  axis: anatomical_axis
+    #anterior-posterior axis
 
 name:
   text: "Line along %s of %s"
@@ -27,5 +32,5 @@ def:
 equivalentTo:
   text: "%s ('follows axis' some %s)"
   vars:
-    - axis
     - structure
+    - axis
